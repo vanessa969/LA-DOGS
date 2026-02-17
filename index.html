@@ -236,19 +236,18 @@
 
       return (
         <div style={{ minHeight: "100vh", background: "#000", display: "flex", alignItems: "flex-start", justifyContent: "center", padding: "20px 16px", fontFamily: "'DM Sans','Helvetica Neue',sans-serif" }}>
-          <div style={{ width: "100%", maxWidth: 390, minHeight: 700, background: "#000", borderRadius: 40, border: "1px solid rgba(255,214,0,0.08)", overflow: "visible" }}>
-            <div style={{ padding: "36px 26px 28px" }}>
+          <div style={{ width: "100%", maxWidth: 390, background: "#000", borderRadius: 40, border: "1px solid rgba(255,214,0,0.08)", overflow: "visible" }}>
+            <div style={{ padding: "28px 22px 22px" }}>
 
-              <div style={{ textAlign: "center", marginBottom: 10, display: "flex", alignItems: "center", justifyContent: "center", gap: 6, opacity: 0.5 }}>
-                <span style={{ fontFamily: "'Space Mono',monospace", fontSize: 10, fontWeight: 700, letterSpacing: 2, color: FI, textTransform: "uppercase" }}>Powered by</span>
-                <img src="data:image/png;base64,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" alt="Fi" style={{ width: 22, height: 22, borderRadius: 4 }} />
+              <div style={{ textAlign: "center", marginBottom: 6 }}>
+                <span style={{ fontFamily: "'Space Mono',monospace", fontSize: 11, fontWeight: 700, letterSpacing: 3, color: FI, textTransform: "uppercase", opacity: 0.5 }}>Powered by Fi</span>
               </div>
-              <div style={{ textAlign: "center", marginBottom: hood ? 20 : 24 }}>
+              <div style={{ textAlign: "center", marginBottom: hood ? 14 : 24 }}>
                 <h1 style={{ fontSize: 24, fontWeight: 700, color: "#FFF", margin: "0 0 5px", lineHeight: 1.15, letterSpacing: "-0.02em" }}>
-                  {hood ? <>Dogs of <span style={{ color: FI }}>{hood}</span></> : <>What's Your<br /><span style={{ color: FI }}>Dog Neighborhood?</span></>}
+                  {hood ? <><span style={{ color: FI }}>{hood}</span> Dogs</> : <>What's Your<br /><span style={{ color: FI }}>Dog Neighborhood?</span></>}
                 </h1>
                 {!hood && <p style={{ fontSize: 13, color: "rgba(255,255,255,0.3)", margin: 0 }}>Pick your neighborhood. We'll show you the data.</p>}
-                {hood && data && <p style={{ fontSize: 12, color: "rgba(255,255,255,0.3)", margin: 0 }}>Real data from Fi dogs in {hood}</p>}
+                {hood && data && <p style={{ fontSize: 12, color: "rgba(255,255,255,0.3)", margin: 0 }}>{data.dogs} Fi dogs tracked &middot; Last 30 days</p>}
               </div>
 
               {/* Picker */}
@@ -279,67 +278,61 @@
                 <div key={rk} style={{ animation: "scaleIn .5s cubic-bezier(0.34,1.56,0.64,1)" }}>
 
                   {/* Activity card */}
-                  <div style={{ background: "rgba(255,214,0,0.03)", border: "1px solid rgba(255,214,0,0.1)", borderRadius: 18, padding: "20px 18px", marginBottom: 10 }}>
-                    <div style={{ fontSize: 10, fontWeight: 600, color: "rgba(255,255,255,0.25)", textTransform: "uppercase", letterSpacing: 1.5, marginBottom: 10 }}>Daily Activity</div>
-                    <div style={{ display: "flex", alignItems: "baseline", gap: 6, marginBottom: 3 }}>
-                      <span style={{ fontFamily: "'Space Mono',monospace", fontSize: 38, fontWeight: 700, color: "#FFF", lineHeight: 1 }}><AnimNum value={data.steps} /></span>
-                      <span style={{ fontSize: 13, color: "rgba(255,255,255,0.3)" }}>steps/day</span>
+                  <div style={{ background: "rgba(255,214,0,0.03)", border: "1px solid rgba(255,214,0,0.1)", borderRadius: 16, padding: "14px 16px", marginBottom: 8 }}>
+                    <div style={{ display: "flex", alignItems: "baseline", gap: 6, marginBottom: 2 }}>
+                      <span style={{ fontFamily: "'Space Mono',monospace", fontSize: 32, fontWeight: 700, color: "#FFF", lineHeight: 1 }}><AnimNum value={data.steps} /></span>
+                      <span style={{ fontSize: 12, color: "rgba(255,255,255,0.3)" }}>steps/day</span>
+                      <span style={{ fontSize: 11, color: "rgba(255,255,255,0.15)", marginLeft: "auto" }}>{"\u2248"} {data.miles} mi</span>
                     </div>
-                    <div style={{ fontSize: 11, color: "rgba(255,255,255,0.18)", marginBottom: 12 }}>{"\u2248"} {data.miles} miles daily average</div>
-                    <div style={{ display: "flex", justifyContent: "space-between", fontSize: 10, color: "rgba(255,255,255,0.3)", marginBottom: 5 }}>
-                      <span>LA metro avg: {LA_AVG.toLocaleString()}</span>
-                      <span style={{ color: statColor, fontWeight: 600 }}>{data.pctVsLA > 0 ? "+" : ""}{data.pctVsLA}% vs LA</span>
+                    <div style={{ display: "flex", justifyContent: "space-between", fontSize: 10, color: "rgba(255,255,255,0.3)", marginBottom: 4 }}>
+                      <span>LA avg: {LA_AVG.toLocaleString()}</span>
+                      <span style={{ color: statColor, fontWeight: 600 }}>{data.pctVsLA > 0 ? "+" : ""}{data.pctVsLA}%</span>
                     </div>
-                    <div style={{ height: 5, background: "rgba(255,255,255,0.04)", borderRadius: 3, overflow: "hidden", position: "relative" }}>
-                      <div style={{ position: "absolute", left: `${Math.min((LA_AVG / Math.max(data.steps, LA_AVG)) * 100, 100)}%`, top: -2, bottom: -2, width: 2, background: "rgba(255,255,255,0.15)", borderRadius: 1, zIndex: 2 }} />
-                      <div style={{ height: "100%", width: `${Math.min((data.steps / Math.max(data.steps, LA_AVG * 1.15)) * 100, 100)}%`, background: `linear-gradient(90deg, ${statColor}70, ${statColor})`, borderRadius: 3, transition: "width 1s cubic-bezier(0.34,1.56,0.64,1)" }} />
+                    <div style={{ height: 4, background: "rgba(255,255,255,0.04)", borderRadius: 2, overflow: "hidden", position: "relative" }}>
+                      <div style={{ position: "absolute", left: `${Math.min((LA_AVG / Math.max(data.steps, LA_AVG)) * 100, 100)}%`, top: -1, bottom: -1, width: 2, background: "rgba(255,255,255,0.15)", borderRadius: 1, zIndex: 2 }} />
+                      <div style={{ height: "100%", width: `${Math.min((data.steps / Math.max(data.steps, LA_AVG * 1.15)) * 100, 100)}%`, background: `linear-gradient(90deg, ${statColor}70, ${statColor})`, borderRadius: 2, transition: "width 1s cubic-bezier(0.34,1.56,0.64,1)" }} />
                     </div>
                   </div>
 
                   {/* Top breeds */}
-                  <div style={{ background: "rgba(255,255,255,0.02)", border: "1px solid rgba(255,255,255,0.05)", borderRadius: 14, padding: "14px 16px", marginBottom: 10 }}>
-                    <div style={{ fontSize: 10, fontWeight: 600, color: "rgba(255,255,255,0.25)", textTransform: "uppercase", letterSpacing: 1.5, marginBottom: 10 }}>Top Breeds</div>
+                  <div style={{ background: "rgba(255,255,255,0.02)", border: "1px solid rgba(255,255,255,0.05)", borderRadius: 12, padding: "10px 14px", marginBottom: 8 }}>
+                    <div style={{ fontSize: 9, fontWeight: 600, color: "rgba(255,255,255,0.2)", textTransform: "uppercase", letterSpacing: 1.5, marginBottom: 8 }}>Top Breeds</div>
                     {data.breeds.map((b, i) => (
-                      <div key={b} style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: i < 2 ? 8 : 0 }}>
+                      <div key={b} style={{ display: "flex", alignItems: "center", gap: 8, marginBottom: i < 2 ? 5 : 0 }}>
                         <div style={{
-                          width: 24, height: 24, borderRadius: 7, flexShrink: 0,
+                          width: 20, height: 20, borderRadius: 5, flexShrink: 0,
                           background: i === 0 ? FI : i === 1 ? "rgba(255,214,0,0.2)" : "rgba(255,255,255,0.06)",
                           display: "flex", alignItems: "center", justifyContent: "center",
-                          fontSize: 11, fontWeight: 700, fontFamily: "'Space Mono',monospace",
+                          fontSize: 10, fontWeight: 700, fontFamily: "'Space Mono',monospace",
                           color: i === 0 ? "#000" : i === 1 ? FI : "rgba(255,255,255,0.35)",
                         }}>{i + 1}</div>
-                        <span style={{ fontSize: 13, fontWeight: 500, color: "#FFF" }}>{b}</span>
+                        <span style={{ fontSize: 12, fontWeight: 500, color: "#FFF" }}>{b}</span>
                       </div>
                     ))}
                   </div>
 
                   {/* Rest stats */}
-                  <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: 8, marginBottom: 10 }}>
+                  <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: 6, marginBottom: 8 }}>
                     {[
-                      { label: "Naps", val: `${data.napHrs}h`, sub: "daytime" },
-                      { label: "Sleep", val: `${data.sleepHrs}h`, sub: "nighttime" },
-                      { label: "Total Rest", val: `${data.restHrs}h`, sub: "per day" },
+                      { label: "Naps", val: `${data.napHrs}h` },
+                      { label: "Sleep", val: `${data.sleepHrs}h` },
+                      { label: "Total Rest", val: `${data.restHrs}h` },
                     ].map((s) => (
-                      <div key={s.label} style={{ background: "rgba(255,255,255,0.02)", border: "1px solid rgba(255,255,255,0.04)", borderRadius: 12, padding: "10px 10px", textAlign: "center" }}>
-                        <div style={{ fontSize: 9, color: "rgba(255,255,255,0.2)", textTransform: "uppercase", letterSpacing: 1, marginBottom: 3 }}>{s.label}</div>
-                        <div style={{ fontSize: 18, fontWeight: 700, color: "#FFF", fontFamily: "'Space Mono',monospace" }}>{s.val}</div>
-                        <div style={{ fontSize: 9, color: "rgba(255,255,255,0.15)" }}>{s.sub}</div>
+                      <div key={s.label} style={{ background: "rgba(255,255,255,0.02)", border: "1px solid rgba(255,255,255,0.04)", borderRadius: 10, padding: "8px 6px", textAlign: "center" }}>
+                        <div style={{ fontSize: 8, color: "rgba(255,255,255,0.2)", textTransform: "uppercase", letterSpacing: 1, marginBottom: 2 }}>{s.label}</div>
+                        <div style={{ fontSize: 16, fontWeight: 700, color: "#FFF", fontFamily: "'Space Mono',monospace" }}>{s.val}</div>
                       </div>
                     ))}
                   </div>
 
                   {/* Blurb */}
-                  <div style={{ background: "rgba(255,255,255,0.015)", border: "1px solid rgba(255,255,255,0.04)", borderRadius: 14, padding: "12px 14px", marginBottom: 10 }}>
-                    <p style={{ fontSize: 12, color: "rgba(255,255,255,0.4)", margin: 0, lineHeight: 1.55 }}>{data.blurb}</p>
+                  <div style={{ background: "rgba(255,255,255,0.015)", border: "1px solid rgba(255,255,255,0.04)", borderRadius: 12, padding: "10px 12px", marginBottom: 8 }}>
+                    <p style={{ fontSize: 11, color: "rgba(255,255,255,0.35)", margin: 0, lineHeight: 1.5 }}>{data.blurb.split('.')[0]}.</p>
                   </div>
 
                   {/* Metro badge */}
-                  <div style={{ background: "rgba(255,214,0,0.03)", border: "1px solid rgba(255,214,0,0.08)", borderRadius: 12, padding: "10px 14px", display: "flex", alignItems: "center", gap: 10, marginBottom: 16 }}>
-                    <div style={{ width: 32, height: 32, borderRadius: 8, background: FI, display: "flex", alignItems: "center", justifyContent: "center", fontFamily: "'Space Mono',monospace", fontSize: 14, fontWeight: 700, color: "#000", flexShrink: 0 }}>#2</div>
-                    <div>
-                      <div style={{ fontSize: 11, fontWeight: 600, color: "#FFF" }}>LA ranks #2 of 18 major US metros</div>
-                      <div style={{ fontSize: 10, color: "rgba(255,255,255,0.2)" }}>for average daily dog activity</div>
-                    </div>
+                  <div style={{ textAlign: "center", fontSize: 10, color: "rgba(255,255,255,0.2)", marginBottom: 12 }}>
+                    <span style={{ color: FI, fontWeight: 700, fontFamily: "'Space Mono',monospace" }}>#2</span> LA ranks #2 of 18 US metros for daily dog activity
                   </div>
 
                   {/* Buttons */}
@@ -347,15 +340,12 @@
                     <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#000" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
                     Follow @fi.dogs
                   </a>
-                  <div style={{ display: "flex", gap: 8 }}>
-                    <button onClick={reset} style={{ flex: 1, background: "rgba(255,255,255,0.04)", border: "1px solid rgba(255,255,255,0.07)", borderRadius: 14, padding: "12px", color: "rgba(255,255,255,0.4)", fontSize: 12, fontWeight: 600, fontFamily: "inherit", cursor: "pointer" }}>Try Another</button>
-                    <a href="https://tryfi.com/mini/dog?utm_campaign=mini&utm_medium=RT&utm_source=GEO" target="_blank" rel="noopener noreferrer" style={{ flex: 1, background: "rgba(255,214,0,0.08)", border: "1px solid rgba(255,214,0,0.18)", borderRadius: 14, padding: "12px", color: FI, fontSize: 12, fontWeight: 600, fontFamily: "inherit", textAlign: "center", textDecoration: "none", display: "flex", alignItems: "center", justifyContent: "center" }}>Get a Fi Collar &rarr;</a>
-                  </div>
-                  <button onClick={handleShare} style={{ width: "100%", background: "rgba(255,255,255,0.04)", border: "1px solid rgba(255,255,255,0.07)", borderRadius: 14, padding: "12px", color: "rgba(255,255,255,0.4)", fontSize: 12, fontWeight: 600, fontFamily: "inherit", cursor: "pointer", display: "flex", alignItems: "center", justifyContent: "center", gap: 6, marginTop: 8 }}>
-                    {shared ? "Copied!" : "Share with a friend"} {!shared && <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.4)" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M4 12v8a2 2 0 002 2h12a2 2 0 002-2v-8"/><polyline points="16 6 12 2 8 6"/><line x1="12" y1="2" x2="12" y2="15"/></svg>}
-                  </button>
-                  <div style={{ textAlign: "center", marginTop: 12, fontSize: 9, color: "rgba(255,255,255,0.1)", lineHeight: 1.4 }}>
-                    Data from Fi's network of 1M+ GPS smart collars &middot; Last 30 days &middot; Feb 2026
+                  <div style={{ display: "flex", gap: 6 }}>
+                    <button onClick={reset} style={{ flex: 1, background: "rgba(255,255,255,0.04)", border: "1px solid rgba(255,255,255,0.07)", borderRadius: 12, padding: "10px", color: "rgba(255,255,255,0.4)", fontSize: 11, fontWeight: 600, fontFamily: "inherit", cursor: "pointer" }}>Try Another</button>
+                    <button onClick={handleShare} style={{ flex: 1, background: "rgba(255,255,255,0.04)", border: "1px solid rgba(255,255,255,0.07)", borderRadius: 12, padding: "10px", color: "rgba(255,255,255,0.4)", fontSize: 11, fontWeight: 600, fontFamily: "inherit", cursor: "pointer", display: "flex", alignItems: "center", justifyContent: "center", gap: 4 }}>
+                      {shared ? "Copied!" : "Share"} {!shared && <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.4)" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M4 12v8a2 2 0 002 2h12a2 2 0 002-2v-8"/><polyline points="16 6 12 2 8 6"/><line x1="12" y1="2" x2="12" y2="15"/></svg>}
+                    </button>
+                    <a href="https://tryfi.com/mini/dog?utm_campaign=mini&utm_medium=RT&utm_source=GEO" target="_blank" rel="noopener noreferrer" style={{ flex: 1, background: "rgba(255,214,0,0.08)", border: "1px solid rgba(255,214,0,0.18)", borderRadius: 12, padding: "10px", color: FI, fontSize: 11, fontWeight: 600, fontFamily: "inherit", textAlign: "center", textDecoration: "none", display: "flex", alignItems: "center", justifyContent: "center" }}>Fi Collar</a>
                   </div>
                 </div>
               )}
