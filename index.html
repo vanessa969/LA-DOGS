@@ -247,7 +247,7 @@
                   {hood ? <><span style={{ color: FI }}>{hood}</span> Dogs</> : <>What's Your<br /><span style={{ color: FI }}>Dog Neighborhood?</span></>}
                 </h1>
                 {!hood && <p style={{ fontSize: 13, color: "rgba(255,255,255,0.5)", margin: 0 }}>Pick your neighborhood. We'll show you the data.</p>}
-                {hood && data && <p style={{ fontSize: 12, color: "rgba(255,255,255,0.55)", margin: 0 }}>{data.dogs} Fi dogs tracked &middot; Last 30 days</p>}
+                {hood && data && <p style={{ fontSize: 12, color: "rgba(255,255,255,0.55)", margin: 0 }}>Last 30 days</p>}
               </div>
 
               {/* Picker */}
@@ -314,13 +314,14 @@
                   {/* Rest stats */}
                   <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: 6, marginBottom: 8 }}>
                     {[
-                      { label: "Naps", val: `${data.napHrs}h` },
-                      { label: "Sleep", val: `${data.sleepHrs}h` },
-                      { label: "Total Rest", val: `${data.restHrs}h` },
+                      { label: "Naps", sub: "daytime", val: `${data.napHrs}h` },
+                      { label: "Sleep", sub: "nighttime", val: `${data.sleepHrs}h` },
+                      { label: "Total Rest", sub: null, val: `${data.restHrs}h` },
                     ].map((s) => (
                       <div key={s.label} style={{ background: "rgba(255,255,255,0.02)", border: "1px solid rgba(255,255,255,0.04)", borderRadius: 10, padding: "8px 6px", textAlign: "center" }}>
                         <div style={{ fontSize: 8, color: "rgba(255,255,255,0.45)", textTransform: "uppercase", letterSpacing: 1, marginBottom: 2 }}>{s.label}</div>
                         <div style={{ fontSize: 16, fontWeight: 700, color: "#FFF", fontFamily: "'Space Mono',monospace" }}>{s.val}</div>
+                        {s.sub && <div style={{ fontSize: 7, color: "rgba(255,255,255,0.35)", marginTop: 1 }}>{s.sub}</div>}
                       </div>
                     ))}
                   </div>
