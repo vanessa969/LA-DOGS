@@ -342,17 +342,17 @@
                   </div>
 
                   {/* Buttons */}
-                  <button onClick={handleShare} style={{ width: "100%", background: FI, border: "none", borderRadius: 14, padding: "14px", color: "#000", fontSize: 13, fontWeight: 700, fontFamily: "inherit", cursor: "pointer", display: "flex", alignItems: "center", justifyContent: "center", gap: 6, marginBottom: 8 }}>
-                    {shared ? "Copied!" : "Share with a friend"} {!shared && <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#000" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M4 12v8a2 2 0 002 2h12a2 2 0 002-2v-8"/><polyline points="16 6 12 2 8 6"/><line x1="12" y1="2" x2="12" y2="15"/></svg>}
-                  </button>
+                  <a href="https://instagram.com/fi.dogs" target="_blank" rel="noopener noreferrer" style={{ width: "100%", background: FI, border: "none", borderRadius: 14, padding: "14px", color: "#000", fontSize: 13, fontWeight: 700, fontFamily: "inherit", cursor: "pointer", textDecoration: "none", display: "flex", alignItems: "center", justifyContent: "center", gap: 6, marginBottom: 8 }}>
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#000" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                    Follow @fi.dogs
+                  </a>
                   <div style={{ display: "flex", gap: 8 }}>
                     <button onClick={reset} style={{ flex: 1, background: "rgba(255,255,255,0.04)", border: "1px solid rgba(255,255,255,0.07)", borderRadius: 14, padding: "12px", color: "rgba(255,255,255,0.4)", fontSize: 12, fontWeight: 600, fontFamily: "inherit", cursor: "pointer" }}>Try Another</button>
                     <a href="https://tryfi.com/mini/dog?utm_campaign=mini&utm_medium=RT&utm_source=GEO" target="_blank" rel="noopener noreferrer" style={{ flex: 1, background: "rgba(255,214,0,0.08)", border: "1px solid rgba(255,214,0,0.18)", borderRadius: 14, padding: "12px", color: FI, fontSize: 12, fontWeight: 600, fontFamily: "inherit", textAlign: "center", textDecoration: "none", display: "flex", alignItems: "center", justifyContent: "center" }}>Get a Fi Collar &rarr;</a>
                   </div>
-                  <a href="https://instagram.com/fi.dogs" target="_blank" rel="noopener noreferrer" style={{ width: "100%", background: "rgba(255,255,255,0.04)", border: "1px solid rgba(255,255,255,0.07)", borderRadius: 14, padding: "12px", color: "#FFF", fontSize: 12, fontWeight: 600, fontFamily: "inherit", textAlign: "center", textDecoration: "none", display: "flex", alignItems: "center", justifyContent: "center", gap: 6, marginTop: 8 }}>
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#FFF" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
-                    Follow @fi.dogs
-                  </a>
+                  <button onClick={handleShare} style={{ width: "100%", background: "rgba(255,255,255,0.04)", border: "1px solid rgba(255,255,255,0.07)", borderRadius: 14, padding: "12px", color: "rgba(255,255,255,0.4)", fontSize: 12, fontWeight: 600, fontFamily: "inherit", cursor: "pointer", display: "flex", alignItems: "center", justifyContent: "center", gap: 6, marginTop: 8 }}>
+                    {shared ? "Copied!" : "Share with a friend"} {!shared && <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.4)" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M4 12v8a2 2 0 002 2h12a2 2 0 002-2v-8"/><polyline points="16 6 12 2 8 6"/><line x1="12" y1="2" x2="12" y2="15"/></svg>}
+                  </button>
                   <div style={{ textAlign: "center", marginTop: 12, fontSize: 9, color: "rgba(255,255,255,0.1)", lineHeight: 1.4 }}>
                     Data from Fi's network of 1M+ GPS smart collars &middot; Last 30 days &middot; Feb 2026
                   </div>
